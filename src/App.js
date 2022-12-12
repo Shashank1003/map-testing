@@ -8,10 +8,10 @@ const MAPBOX_TOKEN =
 
 export default function App() {
   const [viewPort, setViewPort] = useState({
-    longitude: -0.795884491,
-    latitude: 50.76080173,
-    zoom: 15,
-    minZoom: 12,
+    longitude: 73.456722,
+    latitude: 28.342705,
+    zoom: 16,
+    minZoom: 16,
   });
   const mapRef = useRef(null);
 
@@ -39,10 +39,10 @@ export default function App() {
         id="mvt"
         type="vector"
         tiles={[
-          "http://20.219.131.227:8000/tiles/{z}/{x}/{y}",
-          "http://20.219.131.227:8000/tiles/{z}/{x}/{y}",
-          "http://20.219.131.227:8000/tiles/{z}/{x}/{y}",
-          "http://20.219.131.227:8000/tiles/{z}/{x}/{y}",
+          "http://ec2-18-194-188-171.eu-central-1.compute.amazonaws.com:8000/tiles/{z}/{x}/{y}",
+          "http://ec2-18-194-188-171.eu-central-1.compute.amazonaws.com:8000/tiles/{z}/{x}/{y}",
+          "http://ec2-18-194-188-171.eu-central-1.compute.amazonaws.com:8000/tiles/{z}/{x}/{y}",
+          "http://ec2-18-194-188-171.eu-central-1.compute.amazonaws.com:8000/tiles/{z}/{x}/{y}",
         ]}
       />
 
